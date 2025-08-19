@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bureau de Tabac Camelto25</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e8fbe8;
+      color: #333;
+    }
+    header {
+      background: #c8e6c9;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+    nav a {
+      margin-left: 20px;
+      color: #0a3d62;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: #fff;
+      padding: 30px;
+      margin: 20px auto;
+      max-width: 1000px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .hero-text {
+      max-width: 60%;
+    }
+    .hero h2 {
+      margin-bottom: 10px;
+    }
+    .hero p {
+      margin-bottom: 10px;
+      color: #555;
+    }
+    .btn {
+      display: inline-block;
+      padding: 15px 25px;
+      margin: 10px 10px 0 0;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      background: #ff9800;
+      transition: background 0.3s;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #e68900;
+    }
+    .btn i {
+      margin-right: 8px;
+    }
+    .alert-net {
+      color: #b71c1c;
+      font-weight: bold;
+      background: #ffebee;
+      padding: 12px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .logos {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logos img {
+      height: 50px;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
+    }
+    .ads-partners {
+      display: flex;
+      max-width: 1000px;
+      margin: 20px auto;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .ads, .partners {
+      flex: 1;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      min-width: 300px;
+    }
+    .ads h3, .partners h3 {
+      margin-bottom: 15px;
+    }
+    footer {
+      background: #0a3d62;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .hero-text {
+        max-width: 100%;
+      }
+      .hero img {
+        max-width: 100%;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bureau de Tabac Camelto25<br><small>145 rue Triangle des Bermudes, 25000 du côté obscure de la force</small></h1>
+    <nav>
+      <a href="#">Publicités</a>
+      <a href="#">Partenaires</a>
+      <a href="#" style="background:#ff9800; color:#fff; padding:8px 15px; border-radius:6px;">Mon Espace</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Bienvenue — Bureau de Tabac Camelto25</h2>
+      <p>Espace numérique — récupérez vos coupons et recharges en toute sécurité.</p>
+      <p><strong>145 rue Triangle des Bermudes, 25000 du côté obscure de la force • Ouvert 9h - Minuit</strong></p>
+
+      <!-- Boutons T-PCS et T-Transcash -->
+      <a href="https://e.pcloud.link/publink/show?code=XZy1oEZsJM4uTpP5wbO9NAWWbxOjjkNSWFy" target="_blank" class="btn">T-Pcs</a>
+      <a href="https://e.pcloud.link/publink/show?code=XZlTcEZa8WH9iH6I40X6TOQtU61THfm0kpV" target="_blank" class="btn" style="background:#4caf50;">T-Transcash</a>
+
+      <div class="alert-net">
+        ⚠️ Ce logiciel nécessite .NET Framework 4.8 ou plus.<br>
+        <a href="https://dotnet.microsoft.com/en-us/download/dotnet-framework" target="_blank">Télécharger .NET Framework</a>
+      </div>
+
+      <button class="btn" onclick="checkNetFramework()"><i>📥</i> Télécharger le logiciel</button>
+
+      <div class="logos">
+        <img src="images/logo-fdj.png" alt="Logo FDJ">
+        <img src="images/logo-transcash.png" alt="Logo Transcash">
+        <img src="images/logo-pcs.png" alt="Logo PCS">
+      </div>
+    </div>
+    <div>
+      <!-- ✅ Ton image ajoutée ici -->
+      <img src="images/Bureau-de-Tabc-paiment-en-ligne.png" alt="Bureau de tabac" style="max-width:250px; border-radius:10px;">
+    </div>
+  </section>
+
+  <section class="ads-partners">
+    <div class="ads">
+      <h3>Nos Publicités</h3>
+      <div style="margin-bottom:15px;">
+        <img src="images/pub1.jpg" alt="Publicité 1" style="width:100%; border-radius:8px;">
+      </div>
+      <div style="margin-bottom:15px;">
+        <img src="images/pub2.jpg" alt="Publicité 2" style="width:100%; border-radius:8px;">
+      </div>
+      <div>
+        <img src="images/pub3.jpg" alt="Publicité 3" style="width:100%; border-radius:8px;">
+      </div>
+    </div>
+
+    <div class="partners">
+      <h3>Nos Partenaires</h3>
+      <ul style="list-style:none; padding:0; margin:0;">
+        <li style="margin-bottom:10px;">🤝 Française des Jeux (FDJ)</li>
+        <li style="margin-bottom:10px;">💳 Transcash</li>
+        <li style="margin-bottom:10px;">🎫 PCS Mastercard</li>
+        <li style="margin-bottom:10px;">🏪 Réseau Bureau de Tabac Agréé</li>
+      </ul>
+      <p style="margin-top:15px; color:#555;">
+        Merci à nos partenaires qui nous font confiance pour la distribution de coupons et services.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Bureau de Tabac Camelto25 — Tous droits réservés • 145 rue Triangle des Bermudes, 25000 le côté obscure de la force
+  </footer>
+
+  <script>
+    function checkNetFramework() {
+      if(confirm("⚠️ Ce programme nécessite .NET Framework 4.8 ou plus.\n\nVoulez-vous télécharger le logiciel maintenant ?")) {
+        window.open("telechargement/monLogiciel.exe", "_blank"); // <-- Remplace par ton vrai fichier
+      }
+    }
+  </script>
+</body>
+</html>
