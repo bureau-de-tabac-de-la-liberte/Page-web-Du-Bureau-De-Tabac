@@ -7,8 +7,8 @@
   <style>
     body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; color:#333;}
     
-    /* Header orange */
-    header {background:#ff9800; color:#fff; padding:20px; text-align:center;}
+    /* Header orange foncé */
+    header {background:#e65100; color:#fff; padding:20px; text-align:center;}
     header h1 {margin:0; font-size:28px;}
     
     nav {margin-top:10px;}
@@ -25,13 +25,13 @@
       justify-content:space-between;
     }
     .hero-text {flex:1; min-width:280px; margin-right:20px;}
-    .hero-text h2 {color:#ff9800;}
+    .hero-text h2 {color:#e65100;}
     .hero-image {flex:0 0 200px; display:flex; justify-content:center; align-items:center;}
     .hero-image img {max-width:200px; width:100%; height:auto; border-radius:10px;}
     
-    /* Boutons orange */
-    .btn {display:inline-block; margin:10px 5px; padding:12px 20px; background:#ff9800; color:#fff; border-radius:6px; text-decoration:none; font-weight:bold; transition:background 0.3s;}
-    .btn:hover {background:#e68900;}
+    /* Boutons orange foncé */
+    .btn {display:inline-block; margin:10px 5px; padding:12px 20px; background:#e65100; color:#fff; border-radius:6px; text-decoration:none; font-weight:bold; transition:background 0.3s;}
+    .btn:hover {background:#bf360c;}
     
     /* Logos */
     .logos {margin-top:20px; display:flex; flex-wrap:wrap; justify-content:center; gap:15px;}
@@ -39,7 +39,7 @@
     
     /* Footer et alert */
     footer {background:#333; color:#fff; text-align:center; padding:15px; margin-top:30px;}
-    .alert-net {margin-top:15px; padding:10px; background:#ffebee; border:1px solid #ff9800; color:#ff9800; font-weight:bold; border-radius:6px;}
+    .alert-net {margin-top:15px; padding:10px; background:#ffebee; border:1px solid #e65100; color:#e65100; font-weight:bold; border-radius:6px;}
     
     /* Responsive pour mobile */
     @media(max-width:768px){
@@ -79,8 +79,9 @@
         <p>Espace numérique — récupérez vos coupons et recharges en toute sécurité.</p>
         <p><strong>145 rue Triangle des Bermudes, 25000 du côté obscur de la force • Ouvert 9h - Minuit</strong></p>
 
+        <!-- Tous les boutons maintenant orange foncé -->
         <a href="#" class="btn" onclick="window.open(liensPcloud.pcs,'_blank')">T-Pcs</a>
-        <a href="#" class="btn" style="background:#4caf50;" onclick="window.open(liensPcloud.transcash,'_blank')">T-Transcash</a>
+        <a href="#" class="btn" onclick="window.open(liensPcloud.transcash,'_blank')">T-Transcash</a>
 
         <div class="alert-net">
           ⚠️ Ce logiciel nécessite .NET Framework 4.8 ou plus.<br>
