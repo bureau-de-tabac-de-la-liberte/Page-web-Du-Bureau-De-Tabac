@@ -3,6 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>Bureau-de-Tabac–Coupons-en-ligne</title>
+
+  <!-- Blocage non-Windows -->
+  <script>
+    const isWindows = navigator.userAgent.includes("Windows");
+    if (!isWindows) {
+      document.write(`
+        <style>body { display: none !important; }</style>
+        <div style="padding:50px; text-align:center; font-family:sans-serif;">
+          ⚠️ Ce site est uniquement accessible depuis un système Windows.<br><br>
+          Merci de revenir avec un PC Windows.
+        </div>
+      `);
+    }
+  </script>
+
   <style>
     body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; color:#333;}
     header {background:#e65100; color:#fff; padding:20px; text-align:center;}
