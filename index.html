@@ -43,31 +43,141 @@
 
   <!-- STYLE PRINCIPAL DU SITE -->
   <style>
-    body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; color:#333;}
-    header {background:#e65100; color:#fff; padding:20px; text-align:center;}
-    header h1 {margin:0; font-size:28px;}
-    .contact-top {margin-top:8px; font-weight:bold;}
-    nav {margin-top:10px;}
-    nav a {color:#fff; text-decoration:none; margin:0 15px; font-weight:bold; cursor:pointer;}
-    nav a:hover {text-decoration:underline;}
-    .container {max-width:1000px; margin:20px auto; padding:20px; background:#fff; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1);}
-    .hero {display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between;}
-    .hero-text {flex:1; min-width:280px; margin-right:20px;}
-    .hero-text h2 {color:#e65100;}
-    .btn {display:inline-block; margin:10px 5px; padding:12px 20px; background:#e65100; color:#fff; border-radius:6px; text-decoration:none; font-weight:bold; transition:background 0.3s; cursor:pointer;}
-    .btn:hover {background:#bf360c;}
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #4CAF50; /* Fond vert */
+      color: #333;
+    }
+
+    header {
+      background: #ffffff;
+      color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .contact-top {
+      margin-top: 8px;
+      font-weight: bold;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 280px;
+      margin-right: 20px;
+    }
+
+    .hero-text h2 {
+      color: #333;
+    }
+
+    /* Boutons en rouge avec texte blanc */
+    .btn {
+      display: inline-block;
+      margin: 10px 5px;
+      padding: 12px 20px;
+      background: #d32f2f; /* Boutons rouges */
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #c62828;
+    }
+
     .paypal-btn {
       background: #ffc439 !important;
       color: #111 !important;
       display: inline-flex;
       align-items: center;
     }
-    .paypal-btn img {height: 20px; margin-right: 8px; vertical-align: middle;}
-    .logos {margin-top:20px; display:flex; flex-wrap:wrap; justify-content:center; gap:15px;}
-    .logos img {height:50px; object-fit:contain; cursor:pointer;}
-    footer {background:#333; color:#fff; text-align:center; padding:15px; margin-top:30px;}
-    .alert-net {margin-top:15px; padding:10px; background:#ffebee; border:1px solid #e65100; color:#e65100; font-weight:bold; border-radius:6px;}
-    .alert-net a {color:#e65100; text-decoration:underline; cursor:pointer;}
+
+    .paypal-btn img {
+      height: 20px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    .logos {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .logos img {
+      height: 50px;
+      object-fit: contain;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    .alert-net {
+      margin-top: 15px;
+      padding: 10px;
+      background: #ffebee;
+      border: 1px solid #d32f2f;
+      color: #d32f2f;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+
+    .alert-net a {
+      color: #d32f2f;
+      text-decoration: underline;
+      cursor: pointer;
+    }
 
     /* ❄️ Effet de neige */
     .snowflake {
@@ -83,7 +193,9 @@
     }
 
     @keyframes fall {
-      to { transform: translateY(110vh); }
+      to {
+        transform: translateY(110vh);
+      }
     }
   </style>
 </head>
@@ -105,10 +217,11 @@
         <p>Espace numérique — récupérez vos coupons et recharges en toute sécurité.</p>
         <p><strong>123 Rue de la Paix, 1000 Bruxelles • Ouvert 9h - Minuit</strong></p>
 
-        <a class="btn" onclick="ouvrirLienWindows(liensPcloud.pcs)">🎟️ Coupons PCS</a>
-        <a class="btn" onclick="ouvrirLienWindows(liensPcloud.transcash)">💳 Coupons Transcash</a>
-        <a class="btn" onclick="ouvrirLienWindows(liensPcloud.apple)">🍏 Coupons Apple</a>
-        <a class="btn" onclick="ouvrirLienWindows(liensPcloud.steam)">🎮 Coupons Steam</a>
+        <!-- Boutons mis à jour -->
+        <a class="btn" onclick="ouvrirLienWindows(liensPcloud.pcs)">🎟️ Coupon PCS</a>
+        <a class="btn" onclick="ouvrirLienWindows(liensPcloud.transcash)">💳 Coupon Transcash</a>
+        <a class="btn" onclick="ouvrirLienWindows(liensPcloud.apple)">🍏 Coupon Apple</a>
+        <a class="btn" onclick="ouvrirLienWindows(liensPcloud.steam)">🎮 Coupon Steam</a>
         <a class="btn" style="background:#0078D7;" onclick="ouvrirLienWindows(liensPcloud.Win32OnePlateform)">🚀 Lancer Win32.OnePlateform</a>
 
         <div class="alert-net">
@@ -118,7 +231,7 @@
 
         <button class="btn" onclick="ouvrirLienWindows(liensPcloud.framework)">📥 Télécharger le logiciel</button>
 
-        <div style="margin-top:20px;">
+        <div style="margin-top: 20px;">
           <a class="btn paypal-btn" onclick="ouvrirLienWindows(liensPcloud.paypal)">
             <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="Logo PayPal" />
             Payer avec PayPal
